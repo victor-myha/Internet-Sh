@@ -3,44 +3,37 @@ body{
 	padding: 0;
 	background: #E4E5E7;
 }
+.goods{
+	display: flex;
+	justify-content: center;
+}
 .first_filtr_block{
 	width: 80%;
-	height: 65px;
+	min-height: 65px;
 	margin-top: 50px;
-	margin-left: 10%;
-	margin-right: 10%;
 	background: white;
 	border-radius: 10px;
 	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
 	align-items: center;
 }
-.filtr_1{
-	border-right: 3px solid #F2F2F2;
-	height: 100%;
-	display: flex;
-	align-items: center;
+.first_filtr_block div{
+	margin:5px 20px;
 }
-.filtr_2{
-	border-right: 3px solid #F2F2F2;
-	height: 100%;
-	display: flex;
-	align-items: center;
+.keywords{
+	
 }
 .form-group{
 	margin:0;
-	margin-left: 10px;
 }
-
-.first-f .form-group input{
+.keywords .form-group input{
 	width: 160px;
 	border-radius: 15px;
 	height: 30px;
 }
-.second-f .form-group input{
+.price .form-group input{
 	width: 60px;
 	border-radius: 15px;
 	height: 30px;
-}
-.tyre{
-	margin-left: 5px;
 }
