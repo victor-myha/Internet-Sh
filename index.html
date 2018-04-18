@@ -12,39 +12,108 @@
 </header>	
 <main>
 	<section class="goods">
-		<div class="first_filtr_block d-flex font-weight-bold">
-			<div class='text-muted'>Sort by:</div>
-			<div>Best match</div>
-			<div class='text-muted'>Ship to:</div>
-			<div>USA</div>
-			<div class='text-muted d-flex align-items-center keywords'>Keywords
-				<div class="form-group">
-					  <input type="text" class="form-control" id="usr">
-				</div>
-			</div>
-			<div class='text-muted d-flex align-items-center price'>Price
-				<div class="form-group">
+		<div class="wrapper">
+			<div class="first_filtr_block d-flex font-weight-bold">
+				<div class='text-muted'>Sort by:</div>
+				<div>Best match</div>
+				<div class='text-muted'>Ship to:</div>
+				<div>USA</div>
+				<div class='text-muted d-flex align-items-center keywords'>Keywords
+					<div class="form-group">
 						  <input type="text" class="form-control" id="usr">
 					</div>
-					<span class='tyre'>-</span>
+				</div>
+				<div class='text-muted d-flex align-items-center price'>Price
 					<div class="form-group">
-					  <input type="text" class="form-control" id="usr">
+							  <input type="text" class="form-control" id="usr">
+						</div>
+						<span class='tyre'>-</span>
+						<div class="form-group">
+						  <input type="text" class="form-control" id="usr">
+					</div>
+				</div>
+				<div class="form-check">
+	  					<label class="form-check-label">
+	   					 <input type="checkbox" class="form-check-input" value="">Free Shipping
+	 					</label>
+				</div>
+			</div>	
+		</div>
+		<div class="second_filtr_block">
+			<div class="wrapper_2">
+				<div id="m_body"> 
+				    <ul class="font-weight-bold"> 
+					  <li><a href="#" onclick="menuOpen('s_mn_1');return(false)">Top sales</a> 
+						  <ul id="s_mn_1"> 
+						  <li><a href="#">1</a></li> 
+						  <li><a href="#">2</a></li> 
+						  </ul> 
+					  </li> 
+					  <li><a href="#" onclick="menuOpen('s_mn_2');return(false)">Brand focus</a> 
+						  <ul id="s_mn_2"> 
+						  <li><a href="#">1</a></li> 
+						  <li><a href="#">2</a></li> 
+						  </ul> 
+					  </li> 
+					  <li><a href="#" onclick="menuOpen('s_mn_5');return(false)">Hi-tech</a> 
+						  <ul id="s_mn_5"> 
+						  <li><a href="#">CELL PHONES</a></li>
+						  <li><a href="#">CAMERAS</a></li>
+						  <li><a href="#">COMPUTERS</a></li> 
+						  <li><a href="#">TV, AUDIO</a></li> 
+						  <li><a href="#">VIDEO GAMES</a></li> 
+						  </ul> 
+				  	   </li>
+				  	   <li><a href="#" onclick="menuOpen('s_mn_3');return(false)">Home</a> 
+						  <ul id="s_mn_3"> 
+						  <li><a href="#">1</a></li>
+						  <li><a href="#">2</a></li> 
+						  <li><a href="#">3</a></li> 
+						  </ul> 
+					  </li> 
+					  <li><a href="#" onclick="menuOpen('s_mn_4');return(false)">Sale</a> 
+						  <ul id="s_mn_4"> 
+						  <li><a href="#">1</a></li>
+						  <li><a href="#">2</a></li> 
+						  <li><a href="#">3</a></li> 
+						  </ul> 
+					  </li>
+					</ul> 
 				</div>
 			</div>
-			<div class="form-check">
-  					<label class="form-check-label">
-   					 <input type="checkbox" class="form-check-input" value="">Free Shipping
- 					</label>
-			</div>
 		</div>
-		
+			
+		<div class="goods_item">
+			
+		</div>
 	</section>
+
 </main>
 <footer>
 	
 </footer>
 
-
+	<script type="text/javascript"> 
+		var m_id = new Array('s_mn_1','s_mn_2','s_mn_5','s_mn_3','s_mn_4'); 
+		listStart = function allclose() { 
+		  for (i=0; i < m_id.length; i++){ 
+		  document.getElementById(m_id[i]).style.display = "none"; 
+		  } 
+		} 
+		function menuOpen(id){ 
+		  for (i=0; i < m_id.length; i++){ 
+		  if (id != m_id[i]){ 
+		  document.getElementById(m_id[i]).style.display = "none"; 
+		  } 
+		  } 
+		  if (document.getElementById(id).style.display == "block"){ 
+		  document.getElementById(id).style.display = "none"; 
+		  }else{ 
+		  document.getElementById(id).style.display = "block"; 
+		  } 
+		} 
+		window.onload=listStart; 
+</script>
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
